@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f0eee7" />
+    <meta name="description" content="Lingerwisher — animation, 3D modelling, and GUI/UI art." />
+    <title>Lingerwisher — Creative Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="projects.js" defer></script>
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <canvas class="particles" id="particles" aria-hidden="true"></canvas>
+    <header class="site-header">
+      <a class="wordmark" href="#home" aria-label="Lingerwisher, home">lingerwisher<span aria-hidden="true">.</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+        <span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#why-pick-me">Why me</a>
+        <a href="#skills">Skills</a>
+        <a class="nav-contact" href="#contact">Contact <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero section-shell" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> Roblox creative developer</p>
+          <h1 id="hero-title">Lingerwisher</h1>
+          <p class="hero-intro">I build <strong>Roblox-ready visuals, interface systems, and polished game assets</strong> for creators who want their game to feel premium without the studio chaos.</p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#work">Explore selected work <span aria-hidden="true">↘</span></a>
+            <a class="text-link" href="#contact">Book a project <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-index"><span>01</span><span>Portfolio / 2026</span></div>
+        </div>
+        <div class="hero-artwork" aria-label="Artwork placeholder">
+          <div class="artwork-frame">
+            <span class="frame-corner frame-corner-a"></span><span class="frame-corner frame-corner-b"></span>
+            <img class="hero-image" src="assets/models/model-sports-cars.webp" alt="A pair of sports car models on a tiled 3D floor" fetchpriority="high" />
+            <div class="media-note"><span class="media-note-dot"></span><span>3D modelling<br /><small>Artwork by Lingerwisher</small></span></div>
+            <span class="frame-counter">3D / STUDY</span>
+          </div>
+          <span class="hero-side-note">ANIMATION / FORM / INTERFACE</span>
+        </div>
+        <div class="hero-bottomline"><span>Selected disciplines</span><span>Animation&nbsp; · &nbsp;3D&nbsp; · &nbsp;GUI / UI</span><a href="#work" aria-label="Scroll to selected work">↓</a></div>
+      </section>
+
+      <section class="work-section section-shell" id="work" aria-labelledby="work-title">
+        <div class="section-heading">
+          <div><p class="eyebrow">A selection of disciplines</p><h2 id="work-title">Selected work<span class="accent-dot">.</span></h2></div>
+          <p class="section-aside">An evolving collection.<br />New work will find its place here.</p>
+        </div>
+        <div class="discipline-nav" aria-label="Browse work by discipline">
+          <a href="#animation">01 <span>Animation</span><b aria-hidden="true">↗</b></a>
+          <a href="#modelling">02 <span>3D Modelling</span><b aria-hidden="true">↗</b></a>
+          <a href="#gui-ui">03 <span>GUI / UI Art</span><b aria-hidden="true">↗</b></a>
+        </div>
+        <div class="selected-projects" id="selected-projects" aria-live="polite"></div>
+      </section>
+
+      <section class="discipline-section section-shell" id="animation" aria-labelledby="animation-title">
+        <div class="discipline-title"><span class="section-number">01 / DISCIPLINE</span><h2 id="animation-title">Animation<span class="accent-dot">.</span></h2><p>Movement, timing, and atmosphere. A dedicated space for finished films, loops, and works in progress.</p></div>
+        <div class="project-grid" data-project-list="animation"></div>
+      </section>
+
+      <section class="discipline-section section-shell model-section" id="modelling" aria-labelledby="modelling-title">
+        <div class="discipline-title"><span class="section-number">02 / DISCIPLINE</span><h2 id="modelling-title">3D Modelling<span class="accent-dot">.</span></h2><p>Objects, worlds, and the details that make them feel tangible. Blender is part of the toolkit.</p></div>
+        <div class="project-grid" data-project-list="3d-modelling"></div>
+      </section>
+
+      <section class="discipline-section section-shell ui-section" id="gui-ui" aria-labelledby="gui-title">
+        <div class="discipline-title"><span class="section-number">03 / DISCIPLINE</span><h2 id="gui-title">GUI / UI Art<span class="accent-dot">.</span></h2><p>Interfaces with a point of view. Screens, systems, and visual language led by the artwork itself.</p></div>
+        <div class="project-grid" data-project-list="gui-ui"></div>
+      </section>
+
+      <section class="about-section section-shell" id="about" aria-labelledby="about-title">
+        <div class="about-label"><span class="section-number">A LITTLE CONTEXT</span><span class="about-orbit" aria-hidden="true">LW</span></div>
+        <div class="about-copy">
+          <h2 id="about-title">I build with <em>intent.</em></h2>
+          <p class="about-lead">I’m Lingerwisher — a Roblox-focused creative developer building visual systems, UI, 3D polish, and game-ready assets that look sharp and feel intentional.</p>
+          <p class="placeholder-copy">I help games look more premium, feel more complete, and communicate better through clean interfaces, stronger art direction, and practical execution that ships.</p>
+          <a class="text-link" href="#contact">Work with me <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="about-meta"><span>Currently shaping</span><span>Animation<br />3D modelling<br />GUI / UI art</span><span>Based in<br />[Add location]</span></div>
+      </section>
+
+      <section class="why-section section-shell" id="why-pick-me" aria-labelledby="why-title">
+        <div class="section-heading">
+          <div><p class="eyebrow">Why pick me</p><h2 id="why-title">Built for games, not just galleries<span class="accent-dot">.</span></h2></div>
+          <p class="section-aside">No fluff. No fake process.<br />Just clean work that fits the game.</p>
+        </div>
+
+        <div class="why-grid">
+          <article class="why-card">
+            <span class="why-index">01</span>
+            <h3>Built for gameplay</h3>
+            <p>I design visuals that work inside a game, not just on a portfolio page — clear, readable, and made to feel premium.</p>
+          </article>
+
+          <article class="why-card">
+            <span class="why-index">02</span>
+            <h3>Roblox-focused thinking</h3>
+            <p>I understand the visual language of player-first experiences and build UI and art that fits the vibe without breaking flow.</p>
+          </article>
+
+          <article class="why-card">
+            <span class="why-index">03</span>
+            <h3>Direct communication</h3>
+            <p>Fast replies, clear direction, and no endless back-and-forth. You know what’s happening and what’s getting delivered.</p>
+          </article>
+
+          <article class="why-card">
+            <span class="why-index">04</span>
+            <h3>Clean execution</h3>
+            <p>I handle the visual polish, identity, and systems needed to make a project feel complete without wasting time or budget.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="proof-section section-shell" id="proof" aria-labelledby="proof-title">
+        <div class="section-heading">
+          <div><p class="eyebrow">Proof &amp; process</p><h2 id="proof-title">What clients actually hire me for<span class="accent-dot">.</span></h2></div>
+          <p class="section-aside">Clear scope. Fast communication.<br />Work that gets used.</p>
+        </div>
+
+        <div class="proof-metrics">
+          <article class="metric-card">
+            <span class="metric-value">3+</span>
+            <span class="metric-label">Years building creative, game-facing work</span>
+          </article>
+          <article class="metric-card">
+            <span class="metric-value">7+</span>
+            <span class="metric-label">Core project areas across animation and UI</span>
+          </article>
+          <article class="metric-card">
+            <span class="metric-value">100%</span>
+            <span class="metric-label">Direct communication, no percentage-based fluff</span>
+          </article>
+        </div>
+
+        <div class="proof-grid">
+          <article class="offer-card">
+            <span class="why-index">01</span>
+            <h3>Roblox UI &amp; systems</h3>
+            <p>Menus, HUDs, systems, and interfaces built to feel polished and work cleanly in-game.</p>
+          </article>
+
+          <article class="offer-card">
+            <span class="why-index">02</span>
+            <h3>Game-ready visuals</h3>
+            <p>Props, environment details, 3D assets, and visual polish that make the game feel more premium.</p>
+          </article>
+
+          <article class="offer-card">
+            <span class="why-index">03</span>
+            <h3>Creative prototypes</h3>
+            <p>Fast-turn concepts and feature builds that help teams make decisions before spending big.</p>
+          </article>
+        </div>
+
+        <div class="testimonial-row">
+          <article class="testimonial-card">
+            <p>“Direct, dependable, and easy to work with. The work felt intentional from day one.”</p>
+            <span>Client feedback</span>
+          </article>
+          <article class="testimonial-card">
+            <p>“Clean execution, good communication, and the final result looked like it belonged in the game.”</p>
+            <span>Project partner</span>
+          </article>
+        </div>
+
+        <div class="process-wrap">
+          <div class="process-header">
+            <span class="section-number">Process</span>
+            <h3>How I work</h3>
+          </div>
+          <div class="process-steps">
+            <div><span>01</span><strong>Discover</strong><p>We define the goal, budget, and what actually needs to ship.</p></div>
+            <div><span>02</span><strong>Direction</strong><p>I shape the visual style and key creative decisions before building.</p></div>
+            <div><span>03</span><strong>Build</strong><p>Assets, systems, interfaces, and polish are created in a focused workflow.</p></div>
+            <div><span>04</span><strong>Deliver</strong><p>Final files, implementation support, and cleanup are handled without chaos.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="game-dev-section section-shell" id="game-developer" aria-labelledby="game-dev-title">
+        <div class="section-heading">
+          <div><p class="eyebrow">Game developer</p><h2 id="game-dev-title">Game systems, UI, and polish<br />for serious builds<span class="accent-dot">.</span></h2></div>
+          <p class="section-aside">Paid work. Clear scope.<br />No percentage cuts.</p>
+        </div>
+
+        <div class="game-dev-panel">
+          <div class="game-dev-copy">
+            <p>I build gameplay systems, Roblox tools, UI flows, and playable features that actually work in the game. No percentages, no vague promises — just clean scope, direct communication, and paid work done properly for real projects.</p>
+            <ul>
+              <li>Roblox gameplay systems and feature work</li>
+              <li>Menus, HUDs, and player interaction flows</li>
+              <li>Prototype builds and game-ready polish</li>
+              <li>Implementation support for active projects</li>
+            </ul>
+          </div>
+          <div class="game-dev-price">
+            <span class="section-number">LET’S TALK</span>
+            <p>Every project is scoped around its goals, complexity, and timeline.</p>
+            <a class="button button-dark" href="#contact">Get a quote</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills-section section-shell" id="skills" aria-labelledby="skills-title">
+        <div class="section-heading"><div><p class="eyebrow">Tools &amp; practice</p><h2 id="skills-title">What I work with<span class="accent-dot">.</span></h2></div><p class="section-aside">No scores, just the<br />things I make.</p></div>
+        <div class="skills-layout">
+          <div class="skill-list"><div><span>01</span><h3>Animation</h3><b>↗</b></div><div><span>02</span><h3>3D Modelling</h3><b>↗</b></div><div><span>03</span><h3>GUI / UI Art</h3><b>↗</b></div></div>
+          <div class="tools-block"><span class="section-number">PRIMARY SOFTWARE</span><p>Blender</p><span class="tools-note">Add other tools as your practice grows.</span></div>
+        </div>
+      </section>
+
+      <section class="contact-section section-shell" id="contact" aria-labelledby="contact-title">
+        <div class="contact-topline"><span>Have a project in mind?</span><span>CONTACT / 09</span></div>
+        <h2 id="contact-title">Need a game that feels<br /><em>more premium?</em></h2>
+        <p>For Roblox projects, UI systems, art direction, gameplay polish, and custom creative work.</p>
+        <div class="contact-links"><p class="discord-handle"><span>Discord</span><strong>LingerWisher</strong></p><span class="contact-note">Direct messages, project quotes, and custom scopes available.</span></div>
+        <div class="contact-footer"><a class="wordmark" href="#home">lingerwisher<span>.</span></a><span>Animation&nbsp; · &nbsp;3D&nbsp; · &nbsp;GUI / UI</span><a href="#home">Back to top ↑</a></div>
+      </section>
+    </main>
+
+    <dialog class="project-dialog" aria-labelledby="dialog-title">
+      <button class="dialog-close" type="button" aria-label="Close project details">×</button>
+      <div class="dialog-body"></div>
+    </dialog>
+  </body>
+</html>
